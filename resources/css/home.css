@@ -1,0 +1,342 @@
+
+* {
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: Dosis, "Saira Condensed", sans-serif;
+    }
+
+
+/* Defining the header */
+
+.topnav {
+   height: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   }
+.topnav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}   
+
+.topnav li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+}
+#logo {
+    width: 30%;
+    font-weight: 500;
+    align-items: center;
+    font-size: 25px;
+}
+
+   
+.topnav a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.topnav a:hover {
+    color: gray;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    max-height: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.portfolio-featured {
+    display: none;
+  }
+
+.portfolio-featured img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-featured figcaption {
+    color: red;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*fading animation*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* laying out portfolio groupings*/
+.anchor {
+    margin-top: 25px;
+}
+.portfolio-categories {
+    width: 100%;
+    height: 525px;
+    background-color: whitesmoke;
+    margin: 50px auto;
+    position: absolute;
+    top: 1025px;
+     
+}
+.portfolio-categories a {
+    text-decoration: none;
+}
+.portfolio-categories a:hover {
+    color: gray;
+}
+.portfolio-categories img {
+    max-width: 30%;
+    height: 65%;
+    display: inline-block;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+   
+}
+.portfolio-categories figcaption {
+    position: absolute;
+    bottom: 50px;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 500;
+    
+}
+.destination img {
+    left: 0px;
+}
+.lifestyle img {
+    left: 440px;
+}
+
+.portraits img {
+    left: 880px;
+}
+.destination figcaption {
+    left: 125px;
+}
+.lifestyle figcaption {
+    left: 575px;
+}
+.portraits figcaption {
+    left: 1050px;
+}
+/*Laying out about section */
+.about-jack{
+    position: absolute;
+    top: 1700px;
+    width: 100%;
+
+}
+.about-jack img {
+    display: block;
+    width: 475px;
+    height: 500px;
+    position: absolute;
+    margin-left: 60px;
+    left: 600px;
+
+}
+.desc {
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 25px;
+    position: absolute;
+}
+.about-jack h1 {
+    font-size: 1.75em;
+    font-weight: 500;
+    color: goldenrod;
+   
+}
+
+.about-jack p {
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 100px;
+}
+/*contact section*/
+.tocontact {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 2350px;
+    background-color:whitesmoke;
+}
+.tocontact img {
+    display: block;
+    width: 40%;
+    height: 60%;
+    margin-left: 75px;
+    margin-top: 75px;
+}
+    
+.form {
+    position: relative;
+    width: 40%;
+    float: right;
+    bottom: 400px;
+    padding: 25px;
+    line-height: 1.5;
+    font-size: 16px;
+    border: 3px solid grey;
+    margin-right: 75px;
+  
+}
+.form h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+   }
+.form-desc{
+    font-style: italic;
+    text-align: left;
+    }
+
+.form-label {
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.form-input {
+    width: 30%;
+    max-width: 200px;
+}
+.form-input-100 {
+    width: 100%;
+    max-width: 425px;
+}
+.form-input-60 {
+    width: 50%;
+}
+
+.form-input-addrs {
+    width: 15%;
+}
+.button {
+    background-color: indigo;
+    color: white;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+/*Laying out the footer of the page*/
+
+footer {
+    width: 100%;
+    background-color: gainsboro;
+    height: 125px;
+    position: absolute;
+    top: 3000px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+   
+}
+.location {
+    font-size: 1.25em;
+    border-right: 3px solid white;
+    width: 33%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+.social-sites {
+    width: 34%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+.social-sites li{
+    display: inline-block;
+    padding: 0px;
+}
+.social-sites img {
+    width: 40px;
+    margin: 0px;
+   
+}
+.contact {
+    width: 33%; 
+    border-left: 3px solid white;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+}   
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover{
+    color: gray;
+}
+.footend {
+    position: absolute;
+    top: 3130px;
+    display: flex;
+    justify-content: center;
+    background-color:gainsboro;
+    width: 100%;
+    height: 35px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 500;
+    border-top: 3px solid white;
+}
+.footend a {
+    text-decoration: none;
+    color: black;
+}
+
+.footend a:hover {
+    color: gray;
+}

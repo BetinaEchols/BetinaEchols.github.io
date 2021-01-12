@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Jack Photography</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700;800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/home.css">
+
+</head>
+<body>
+    <nav class="topnav" id="home">
+        <div id="logo"><a  href="#">International Jack Photography</a></div>
+        <ul>    
+            <li><a href="#">Information</a></li>
+            <li class="dropdown">
+                <div class="dropdown-content">
+                <a href="#destination">Destination</a>
+                <a href="#lifestyle">Lifestyle</a>
+                <a href="#portraits">Portraits</a>
+                <a href="#">Featured</a>
+                </div>
+                Portfolio</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </nav>
+    <!--Slideshow container-->
+    <main class="slideshow-container" id="featured">
+
+        <!--Images with number and brand information-->
+        <figure class="portfolio-featured fade">
+            <img src="./resources/images/portrait/_Portrait2_Photography IG Glossy-3.jpg" alt="A black and white photo of a naked woman with her hair blowing"/>
+            <figcaption>International Jack Photography</figcaption>
+        </figure>
+        <figure class="portfolio-featured fade">
+            <img src="./resources/images/portfolio/_portfolio_Marketing Photography  Glossy-01.jpg" alt="A picture of the sky near the shore of a lake"/>
+            <figcaption>International Jack Photography</figcaption>
+        </figure>
+        <figure class="portfolio-featured fade">
+            <img src="./resources/images/portfolio/_portfolio_Marketing Photography  Glossy.jpg" alt="Woman in the park surrounded by birds."/>
+            <figcaption>International Jack Photography</figcaption>
+        </figure>
+        <figure class="portfolio-featured fade">
+            <img src="./resources/images/portfolio/_portfolio_Marketing Photography  Glossy-06.jpg" alt="Park bench along the shore line."/>
+            <figcaption>International Jack Photography</figcaption>
+        </figure>
+      </main>
+
+
+    <section class="portfolio-categories">
+        <figure class="destination anchor" id="destination">
+            <img src="./resources/images/destination/_Destination1_Marketing Photography  Glossy-13.jpg" alt=" A colllection of destination photos"/>
+            <figcaption><a href="#">Destination Photos</a></figcaption>
+        </figure>
+        <figure class="lifestyle anchor" id="lifestyle">
+            <img src="./resources/images/lifestyle/_Lifestyle1_Marketing Photography  Glossy-04.jpg" alt="A collection of lifestyle photos"/>
+            <figcaption  ><a href="#">Lifestyle Photos</a></figcaption>
+        </figure>
+        <figure class="portraits anchor" id="portraits">
+            <img src="./resources/images/portrait/_Portrait1_Photography IG Glossy-13.jpg" alt="A collection of portraits"/>
+            <figcaption><a href="#">Portraits</a></figcaption>
+        </figure>
+    </section>
+
+    <section class="about-jack">
+        <h1 id="about" class="desc">Meet Jack</h1>
+        <p class="desc">
+            Represents a unit of content, optionally with a caption, this self-contained.
+            Represents a unit of content, optionally with a caption, this self-contained.
+            <br>
+            <br>
+            Represents a unit of content, optionally with a caption, this self-contained.
+            Represents a unit of content, optionally with a caption, this self-contained.
+        <br>
+        <br>
+        I'm Jack, a Seattle based wedding, business, lifestyle, and travel photographer. I'm crazy about what I do and love being creative on the daily. 
+        <br>
+        <br>
+        Whether I'm a third wheel on your wedding day, creating images for your new business, or just swapping travel stories, I'm doing it with passion and pouring my heart into our time together. 
+        <br>
+        <br>
+        I'm in my happy place when working with people who have a lust for life and don't take themselves too seriously. Let's do more than just take photos, let's create an experience and have some fun with it!
+        <br>
+        <br>
+        Feel free to stay awhile, dig in and explore...what's mine is yours. Let's get together and make some magic happen.      
+        </p>
+        <img src="./resources/images/portrait/_Jack1_Photography IG Glossy-2-2.jpg" alt="A photograph of Jack the photographer" />
+    </section>
+    
+    <section class="tocontact">
+    <img src="./resources/images/contact/journey.jpg" alt="country roadside picture">
+   
+    <form class="form" action="./" method="POST" id="contact">
+        <h1>Let me take this journey with you</h1>
+        <p class="form-desc">
+        Whatever your photo ambitions are, I'm ready to make them a reality.
+        Provide your contact information below and I will be in touch.
+        </p>
+         <div class="form-item">
+            <label class="form-label" for="firstname">First Name</label>
+            <input class="form-input" type="text" id="firstname" name="firstname" placeholder="Enter your name." >
+            
+            <label class="form-label" for="lastname">Last Name</label>
+            <input class="form-input" type="text" id="lastname" name="lastname" placeholder="Enter your surname.">
+        </div>
+        <div class="form-item">
+            <label class="form-label" for="address">Address</label>
+            <input class="form-input-100 form-input" type="text" id="address" name="address" placeholder="Enter your current mailing address.">
+        </div>
+        <div class="form-item">
+            <label class="form-label" for="city">City</label>
+            <input class="form-input" type="text" id="city" name="city">
+            
+            <label class="form-label" for="state">State</label>
+            <input class="form-input form-input-addrs" type="text" id="state" name="state" maxlength="4">
+            
+            <label class="form-label" for="zipcode">Zip Code</label>
+            <input class="form-input form-input-addrs" type="text" id="zipcode" name="zipcode" maxlength="5">
+        </div>
+        <div class="form-item">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input-60 form-input" type="email" id="email" name="email" maxlength="150">
+            
+            <label class="form-label" for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" minlength="10">
+        <div>
+        <div class="form-item">  
+            <label class="form-label" for="event">Event</label>
+            <input class="form-input" type="text" id="event" name="event" placeholder="Nature of the occassion.">
+            
+            <label class="form-label" for="eventdt">Event Date</label>
+            <input type="date" id="eventdt" name="eventdt">
+        </div>
+        <div class="form-item">
+            <label class="form-label" for="comments">Thoughts</label>
+            <input class="form-input form-input-100" type="text" id="comments" name="comments" placeholder="What is your vision for this event.">
+        </div>
+        <div class="form-item">
+            <button class="button" type="submit" id="submit" name="submit">Submit</button>
+        </div> 
+   </form>
+    </section>
+    
+    <footer>
+        <div class="location">Based In Seattle</div>
+        <div class="social-sites">
+            <ul>
+                <li><a href="#facebook"><img src="./resources/images/social media/f_logo_RGB-Blue_58.png" alt="facebook link"</a></li>
+                <li><a href="#twitter"><img src="./resources/images/social media/Twitter_Logo_Blue.png" alt="twitter link"</a></li>
+                <li><a href="#instagram"><img src="./resources/images/social media/iconfinder_social-instagram-new-square2_1164347.png" alt="instagram link"</a></li>
+            </ul>
+        </div>
+        <div class="contact"><a href="#contact">Contact</a></div>
+    </footer>
+    <div class="footend"><a href="#home">International Jack Photography</a></div>
+    <script src="resources/javascript/portfolio_script.js"></script>
+</body>
+</html>
