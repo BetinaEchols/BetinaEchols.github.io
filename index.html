@@ -91,59 +91,97 @@
     </section>
     
     <section class="tocontact">
-    <img src="./resources/images/contact/journey.jpg" alt="country roadside picture">
-   
-    <form class="form" action="./" method="POST" id="contact">
-        <h1>Let me take this journey with you</h1>
-        <p class="form-desc">
-        Whatever your photo ambitions are, I'm ready to make them a reality.
-        Provide your contact information below and I will be in touch.
-        </p>
-         <div class="form-item">
-            <label class="form-label" for="firstname">First Name</label>
-            <input class="form-input" type="text" id="firstname" name="firstname" placeholder="Enter your name." >
-            
-            <label class="form-label" for="lastname">Last Name</label>
-            <input class="form-input" type="text" id="lastname" name="lastname" placeholder="Enter your surname.">
+        <div class="img-div">
+            <img src="./resources/images/destination/Destination3_Marketing_Photography_Glossy-04-2.jpg" alt="A winding country road."/>
         </div>
-        <div class="form-item">
-            <label class="form-label" for="address">Address</label>
-            <input class="form-input-100 form-input" type="text" id="address" name="address" placeholder="Enter your current mailing address.">
+        <div class="form-view">
+            <div class="contact-message">
+                <h1 id="title">Let me take this journey with you</h1>
+                <p id="description">
+                    Whatever your photo ambitions, I'm ready to make them a reality. <br>
+                    Provide your contact information below and I will be in touch.
+                </p>
+            </div>
+            <form id="survey-form"> 
+                <div class="form-item">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" name="name" required placeholder="Enter your name"/>
+                </div>
+                <div class="form-item">
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" name="email" required placeholder="Enter your email"/>
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" name="phone" placeholder="321-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                </div>
+                <div class="form-item">
+                    <span id="chklabel">What is the occasion?</span>
+                        <div class="checklist1">
+                            <input id="wedding" type="checkbox" name="session" value="wedding"/>
+                            <label for="wedding">Wedding</label><br>
+
+                            <input id="graduation" type="checkbox" name="session" value="graduation"/>
+                            <label for="graduation">Graduation</label><br>
+
+                            <input id="family" type="checkbox" name="session" value="family"/>
+                            <label for="family">Family</label><br>
+
+                            <input id="portrait" type="checkbox" name="session" value="portrait"/>
+                            <label for="portrait">Portrait</label><br>
+                        </div>
+                        <div class="checklist2">
+                            <input id="event" type="checkbox" name="session" value="event"/>
+                            <label for="event">Event</label><br>
+
+                            <input id="business" type="checkbox" name="session" value="business"/>
+                            <label for="business">Business</label><br>
+
+                            <input id="outdoor" type="checkbox" name="session" value="outdoor"/>
+                            <label for="outdoor">Outdoors</label><br>
+
+                            <input id="other" type="checkbox" name="session" value="other"/>
+                            <label for="other">Other</label><br>
+                        </div>
+                                               
+                </div>
+               
+                <div class="form-item">
+                    <label for="number" id="number-label">Number of people in the session?</label>
+                    <input id="number" type="number" name="number" min="1" max="50" placeholder="Enter a number between 1 and 50"/>
+                </div>
+                <div class="form-item">
+                    <span>What is most important to you?</span>
+                    <div class="radio">
+                        <input id="creativity" type="radio" name="value-option" value="creativity"/>
+                        <label for="creativity">Creativity</label>
+
+                        <input id="quality" type="radio" name="value-option" value="quality"/>
+                        <label for="quality">Quality</label>
+
+                        <input id="price" type="radio" name="value-option" value="price"/>
+                        <label for="price">Price</label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="dropdown">How did you find me?</label>
+                    <select name="referral" id="dropdown">
+                        <option disabled selected value="">Select an option</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="pintrest">Pintrest</option>
+                        <option value="yelp">Yelp</option>
+                        <option value="referral">Personal Referral</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="comments">Anything else you'd like to share?</label>
+                    <textarea id="comments" placeholder="Enter your thoughts here..." maxlength="200"></textarea>
+                </div>
+                <div class="form-item submit">
+                    <input id="submit" type="submit"/>
+                </div>
+            </form>
         </div>
-        <div class="form-item">
-            <label class="form-label" for="city">City</label>
-            <input class="form-input" type="text" id="city" name="city">
-            
-            <label class="form-label" for="state">State</label>
-            <input class="form-input form-input-addrs" type="text" id="state" name="state" maxlength="4">
-            
-            <label class="form-label" for="zipcode">Zip Code</label>
-            <input class="form-input form-input-addrs" type="text" id="zipcode" name="zipcode" maxlength="5">
-        </div>
-        <div class="form-item">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-input-60 form-input" type="email" id="email" name="email" maxlength="150">
-            
-            <label class="form-label" for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" minlength="10">
-        <div>
-        <div class="form-item">  
-            <label class="form-label" for="event">Event</label>
-            <input class="form-input" type="text" id="event" name="event" placeholder="Nature of the occassion.">
-            
-            <label class="form-label" for="eventdt">Event Date</label>
-            <input type="date" id="eventdt" name="eventdt">
-        </div>
-        <div class="form-item">
-            <label class="form-label" for="comments">Thoughts</label>
-            <input class="form-input form-input-100" type="text" id="comments" name="comments" placeholder="What is your vision for this event.">
-        </div>
-        <div class="form-item">
-            <button class="button" type="submit" id="submit" name="submit">Submit</button>
-        </div> 
-   </form>
-    </section>
-    
+    </section>  
     <footer>
         <div class="location">Based In Seattle</div>
         <div class="social-sites">
