@@ -13,6 +13,7 @@
    width: 100%;
    display: flex;
    justify-content: space-around;
+   overflow: hidden;
    }
 .topnav ul{
     display: flex;
@@ -61,10 +62,11 @@
 
 .slideshow-container {
    /* max-width: 1200px;*/
-    width: 100%;
-    max-height: 600px;
+    width: 90%;
+    /*max-height: 600px;*/
     margin: auto;
-}
+    overflow: hidden;
+ }
 
 .portfolio-featured {
     display: none;
@@ -80,7 +82,7 @@
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 
@@ -108,12 +110,12 @@
     margin-top: 25px;
 }
 .portfolio-categories {
-    width: 100%;
+    width: 90%;
     height: 525px;
     background-color: whitesmoke;
-    margin: 50px auto;
+    margin: 150px auto;
     position: relative;
-    top: 550px;
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
       
@@ -126,7 +128,7 @@
     color: gray;
 }
 .portfolio-categories img {
-    width: 450px;
+    width: 400px;
     height: 65%;
     display: inline-block;
     flex-grow: 1;
@@ -145,10 +147,10 @@
 /*Laying out about section */
 .about-jack{
     position: relative;
-    top: 650px;
-    width: 100%;
+    width: 90%;
     height: 600px;
-    
+    overflow: hidden;
+    margin: 150px auto;
 }
 .about-jack img {
     display: block;
@@ -181,8 +183,9 @@
     width: 100%;
     height: 900px;
     position: relative;
-    top: 650px;
     background-color:whitesmoke;
+    margin auto;
+    overflow: hidden;
 }
 .img-div img{
     display: block;
@@ -267,11 +270,10 @@ footer {
     width: 100%;
     background-color: gainsboro;
     height: 125px;
-    top: 650px;
     position: relative;
     display: flex;
     flex-direction: row;
-    z-index: 1;
+    overflow: hidden;
    
 }
 .location {
@@ -320,7 +322,6 @@ footer {
 }
 .footend {
     position: relative;
-    top: 647px;
     display: flex;
     justify-content: center;
     background-color:gainsboro;
@@ -330,7 +331,8 @@ footer {
     text-align: center;
     font-size: 1.25em;
     font-weight: 500;
-    border-top: 3px solid white;
+    border-top: 1px solid white;
+    overflow: hidden;
 }
 .footend a {
     text-decoration: none;
